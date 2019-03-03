@@ -2,7 +2,7 @@
   <div>
     <h1>{{title}}</h1>
     <ul>
-      <book-item v-for="book in books" :book='book' :key='book.id'></book-item>
+      <book-item v-for="book in books" :book="book" :key="book.id"></book-item>
     </ul>
   </div>
 </template>
@@ -16,9 +16,9 @@ export default {
     return {
       title: "All Books",
       books: [
-        { id:0, title: "Self-Reliance", author: "Ralph Waldo Emerson" },
-        { id:1, title: "American Gods", author: "Neil Gaiman" },
-        { id:2, title: "Amusing Ourselves to Death", author: "Neil Postman" }
+        { id: 0, title: "Self-Reliance", author: "Ralph Waldo Emerson" },
+        { id: 1, title: "American Gods", author: "Neil Gaiman" },
+        { id: 2, title: "Amusing Ourselves to Death", author: "Neil Postman" }
       ]
     };
   }
